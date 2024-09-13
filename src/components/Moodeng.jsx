@@ -36,18 +36,18 @@ function Moodeng() {
   }, [level]);
 
   return (
-    <div className="p-16 w-screen h-screen bg-gradient-to-r from-blue-100 to-blue-300 flex flex-col items-center overflow-hidden">
+    <div className="p-16 w-screen h-screen bg-gradient-to-r from-blue-100 to-blue-300 flex flex-col items-center  border border-red-600">
       <div className="pb-3 text-center text-4xl font-extrabold text-gray-800 mb-4">
         Level: {level}
       </div>
-      <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row relative">
-        <div className="flex-grow py-12 flex justify-center items-center border-b border-gray-300 relative overflow-hidden">
+      <div className="w-screen md:w-full bg-white rounded-lg shadow-lg  flex flex-col md:flex-row relative">
+        <div className="py-20 flex-grow md:py-12 flex justify-center items-center border-b border-gray-300 relative overflow-hidden z-50">
           <img 
             id="photo" 
             src={moodeng} 
             alt="moodeng" 
             style={{ width: `${size}px`, transition: 'width 0.3s ease-in-out' }} 
-            className="transition-transform transform duration-300 ease-in-out"
+            className="absolute transition-transform transform duration-300 ease-in-out"
           />
         </div>
         
